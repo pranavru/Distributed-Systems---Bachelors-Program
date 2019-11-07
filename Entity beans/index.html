@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+Entity Services
+-->
+<html>
+    <head>
+        <title>Entity Beans</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <div align="center">
+            <h1>Welcome to the Airline Services.</h1>
+        </div>
+        <h2>
+            0 - BOOK TICKET<br>
+            1 - UPDATE TICKET<br>
+            2 - CANCEL TICKET<br>
+            3 - TO VIEW THE PASSENGER INFORMATION.<br>
+        </h2>
+        <hr><form id="Air" action="AirlineServlet">    
+            Enter the Choice Value: <input type="text" name="choice" value="" /><br><br>
+            <table border="3" width="650" cellpadding="5"> 
+                <tbody>            
+                    <tr>
+                            <td>Enter the Name of the Flight you want to Board:</td>
+                            <td>
+                                <select name="Fname">
+                                    <option>   </option>
+                                    <option>Indigo</option>
+                                    <option>Spice Jet</option>
+                                    <option>Etihad</option>
+                                    <option>Air India</option>
+                                </select>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Enter the Customer ID :
+                            </td>
+                            <td>
+                                <input type="text" name="CID" value="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enter the No. of Tickets: </td>
+                            <td><input type="text" name="NoofTickets"/></td>
+                        </tr>
+                        <tr>
+                            <td>Enter the Name:</td>
+                            <td><input type="text" placeholder="abc" name="Name" /></td>
+                        </tr>
+                        <tr>
+                            <td>Enter the Source:</td>
+                            <td>
+                                <select name="Source">
+                                    <option>   </option>
+                                    <option>Delhi</option>
+                                    <option>Mumbai</option>
+                                    <option>Chennai</option>
+                                    <option>Goa</option>
+                                    </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Enter the Destination:</td>
+                        <td>
+                            <select name="Destination">
+                                <option>  </option>
+                                <option>Mumbai</option>
+                                <option>Chennai</option>
+                                <option>Goa</option>
+                                <option>Delhi</option>
+                            </select>
+                            <br><br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="SUBMIT" name="SUBMIT"/> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Reset" name="RESET"/>
+            <br><br>
+        </form>
+    </center>
+    </body>
+</html>
